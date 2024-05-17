@@ -9,7 +9,7 @@ export default function UseSocket() {
    const { data: session } = useSession();
 
    useEffect(() => {
-      const socket = io("https://server-socket-k10p.onrender.com/");
+      const socket = io("https://server-socket-vcta.onrender.com");
 
       socket.on("receive-message", (user) => {
          if (session?.userId == user) {
